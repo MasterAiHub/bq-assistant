@@ -1,0 +1,14 @@
+{
+  "rules": [
+    {
+      "action": "block",
+      "expression": "(http.request.uri.path contains \"/admin\") and (not ip.src in {1.2.3.4})",
+      "description": "Block unauthorized admin access"
+    },
+    {
+      "action": "challenge",
+      "expression": "http.request.uri.path contains \"/api/auth/login\" and http.request.rate_limit.requests_per_minute > 20",
+      "description": "Rate limit login attempts"
+    }
+  ]
+}

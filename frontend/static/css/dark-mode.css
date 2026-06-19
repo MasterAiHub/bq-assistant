@@ -1,0 +1,222 @@
+/* Dark Mode Styles */
+
+:root {
+    --dm-bg-dark: #0a0f1a;
+    --dm-bg-card: #111827;
+    --dm-text-white: #ffffff;
+    --dm-text-gray: #94a3b8;
+    --dm-border: #1e293b;
+    --dm-primary: #2563eb;
+    --dm-primary-dark: #1d4ed8;
+    --dm-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+/* Dark mode is the default in this application */
+body.dark-mode {
+    background-color: var(--dm-bg-dark);
+    color: var(--dm-text-white);
+}
+
+body.dark-mode .navbar {
+    background: rgba(10, 15, 26, 0.9);
+    border-bottom-color: var(--dm-border);
+}
+
+body.dark-mode .nav-links a {
+    color: var(--dm-text-gray);
+}
+
+body.dark-mode .nav-links a:hover {
+    color: var(--dm-text-white);
+}
+
+body.dark-mode .badge {
+    background: rgba(37, 99, 235, 0.2);
+    color: #60a5fa;
+}
+
+body.dark-mode .btn-primary {
+    background: var(--dm-primary);
+    color: white;
+}
+
+body.dark-mode .btn-primary:hover {
+    background: var(--dm-primary-dark);
+}
+
+body.dark-mode .btn-secondary {
+    color: var(--dm-text-white);
+    border-color: var(--dm-border);
+}
+
+body.dark-mode .btn-secondary:hover {
+    border-color: var(--dm-primary);
+    color: var(--dm-primary);
+}
+
+body.dark-mode .subtitle {
+    color: var(--dm-text-gray);
+}
+
+body.dark-mode .stats span {
+    color: var(--dm-text-gray);
+}
+
+body.dark-mode .live-status {
+    background: rgba(16, 185, 129, 0.1);
+    border-color: rgba(16, 185, 129, 0.2);
+}
+
+body.dark-mode .meeting-simulator {
+    background: var(--dm-bg-card);
+    border-color: var(--dm-border);
+    box-shadow: var(--dm-shadow);
+}
+
+body.dark-mode .sim-header {
+    background: rgba(0,0,0,0.3);
+    border-bottom-color: var(--dm-border);
+    color: var(--dm-text-gray);
+}
+
+body.dark-mode .participant {
+    background: rgba(255,255,255,0.03);
+    border-color: var(--dm-border);
+}
+
+body.dark-mode .participant img {
+    border-color: var(--dm-primary);
+}
+
+body.dark-mode .participant .role {
+    color: var(--dm-text-gray);
+}
+
+body.dark-mode .sim-footer {
+    background: rgba(0,0,0,0.3);
+    border-top-color: var(--dm-border);
+}
+
+body.dark-mode .bq-popup {
+    background: rgba(0,0,0,0.95);
+    border-color: rgba(37, 99, 235, 0.4);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .popup-header {
+    color: var(--dm-text-gray);
+}
+
+body.dark-mode .popup-answer {
+    color: var(--dm-text-white);
+}
+
+body.dark-mode .popup-shortcut {
+    color: var(--dm-text-gray);
+    border-top-color: var(--dm-border);
+}
+
+body.dark-mode .popup-shortcut kbd {
+    background: rgba(255,255,255,0.1);
+}
+
+body.dark-mode .feature-card {
+    background: var(--dm-bg-card);
+    border-color: var(--dm-border);
+}
+
+body.dark-mode .feature-card:hover {
+    border-color: var(--dm-primary);
+}
+
+body.dark-mode .feature-card p {
+    color: var(--dm-text-gray);
+}
+
+body.dark-mode .mobile-section p {
+    color: var(--dm-text-gray);
+}
+
+body.dark-mode .phone-frame {
+    background: #1a1a2e;
+    border-color: #2d2d44;
+}
+
+body.dark-mode .phone-screen {
+    background: var(--dm-bg-dark);
+}
+
+body.dark-mode .phone-header {
+    border-bottom-color: var(--dm-border);
+}
+
+body.dark-mode .phone-question {
+    background: rgba(255,255,255,0.05);
+    color: var(--dm-text-gray);
+}
+
+body.dark-mode .phone-answer {
+    background: rgba(37, 99, 235, 0.1);
+    border-left-color: var(--dm-primary);
+}
+
+body.dark-mode .phone-bq-btn {
+    background: var(--dm-primary);
+    color: white;
+}
+
+body.dark-mode footer {
+    background: var(--dm-bg-card);
+    border-top-color: var(--dm-border);
+}
+
+body.dark-mode .footer-col a {
+    color: var(--dm-text-gray);
+}
+
+body.dark-mode .footer-col a:hover {
+    color: var(--dm-text-white);
+}
+
+body.dark-mode .footer-bottom {
+    border-top-color: var(--dm-border);
+    color: var(--dm-text-gray);
+}
+
+body.dark-mode .social-icons a {
+    color: var(--dm-text-gray);
+}
+
+body.dark-mode .social-icons a:hover {
+    color: var(--dm-text-white);
+}
+
+/* Toggle button for dark/light mode (if implemented) */
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--dm-primary);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    z-index: 999;
+    transition: 0.2s;
+}
+
+.theme-toggle:hover {
+    background: var(--dm-primary-dark);
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .theme-toggle {
+        bottom: 10px;
+        right: 10px;
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}

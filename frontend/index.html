@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <title>BQ – Undetectable AI Meeting Assistant</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/responsive.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-inner">
+        <div class="logo">BQ<span>.</span></div>
+        <div class="nav-links">
+            <a href="/">Overview</a>
+            <a href="/manifesto">Manifesto</a>
+            <a href="/press">Press</a>
+            <a href="/help">Help</a>
+        </div>
+        <button class="btn-primary btn-sm" onclick="window.location.href='#download'">Download</button>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="badge">⚡ #1 Undetectable AI for Meetings</div>
+        <h1>BQ takes perfect meeting notes and gives real‑time answers, all while completely undetectable</h1>
+        <p class="subtitle">Press <kbd>Ctrl+Enter</kbd> for instant, accurate answers that sound natural and human.</p>
+        <div class="actions">
+            <button class="btn-primary" onclick="window.location.href='#download'">Get for Windows</button>
+            <button class="btn-secondary" onclick="document.getElementById('demo').scrollIntoView({behavior:'smooth'})">See how it works</button>
+        </div>
+        <div class="stats">
+            <span>⚡ 300ms response</span>
+            <span>🎯 95% accuracy</span>
+            <span>🌍 12+ languages</span>
+            <span>👥 50k+ users</span>
+        </div>
+        <div class="live-status">
+            <span class="status-dot listening"></span>
+            <span class="status-text">🎙️ BQ is listening...</span>
+        </div>
+    </div>
+    
+    <!-- Meeting Simulator -->
+    <div class="meeting-simulator" id="demo">
+        <div class="sim-header">
+            <span>🎥 Product Manager Interview · Live</span>
+            <span>⏺ Recording ● 00:24</span>
+        </div>
+        <div class="sim-grid">
+            <div class="participant">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=face" alt="Interviewer">
+                <div class="name">Sarah Chen <span class="role">Interviewer</span></div>
+                <div class="speaking">🔴 Speaking</div>
+            </div>
+            <div class="participant">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="You">
+                <div class="name">Alex Kim <span class="role">You</span></div>
+                <div class="muted">🔘 Muted</div>
+            </div>
+        </div>
+        <div class="sim-footer">
+            <span>💬 Live: "How would you handle this situation?"</span>
+            <button id="bqMobileBtn" class="bq-mobile-btn">🤖 Get Answer</button>
+        </div>
+        <div class="bq-popup" id="bqPopup">
+            <div class="popup-header">
+                <span>✨ BQ Assistant</span>
+                <span>🔒 Only you see this</span>
+            </div>
+            <div class="popup-body">
+                <div class="popup-answer">💡 BQ suggests: "I'd prioritize based on impact and urgency, then communicate trade-offs clearly."</div>
+                <div class="popup-shortcut">Press <kbd>Ctrl+Enter</kbd> for instant answers</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features -->
+<section class="features">
+    <h2>How BQ helps during a meeting</h2>
+    <div class="feature-grid">
+        <div class="feature-card">
+            <div class="icon">🎧</div>
+            <h3>Listens in the background</h3>
+            <p>BQ picks up the context of your meeting as it happens, without any action required from you.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">⚡</div>
+            <h3>Instant assistance</h3>
+            <p>Press <kbd>Ctrl+Enter</kbd> and BQ answers your questions about the conversation instantly.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">👻</div>
+            <h3>100% undetectable</h3>
+            <p>No bots join your meeting. BQ runs locally and never shows up in shared screens or recordings.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Mobile Section -->
+<section class="mobile-section" id="download">
+    <h2>BQ for Mobile & Desktop</h2>
+    <p>Available on iOS, Android, Windows, macOS, and Linux.</p>
+    <div class="app-badges">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+    </div>
+    <div class="mobile-demo">
+        <div class="phone-frame">
+            <div class="phone-screen">
+                <div class="phone-header">BQ Assistant</div>
+                <div class="phone-body">
+                    <div class="phone-question">Interviewer: "What's your approach?"</div>
+                    <div class="phone-answer">💡 BQ suggests: "I focus on understanding first, then deliver a clear, actionable plan."</div>
+                    <button class="phone-bq-btn">🤖 Get Answer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-grid">
+        <div>
+            <h3>BQ</h3>
+            <p style="color: var(--text-gray); font-size: 0.9rem;">Undetectable AI for meetings.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Resources</h4>
+            <a href="/manifesto">Manifesto</a>
+            <a href="/press">Press</a>
+            <a href="/subprocessors">Subprocessors</a>
+        </div>
+        <div class="footer-col">
+            <h4>Support</h4>
+            <a href="/help">Help Center</a>
+            <a href="mailto:help@bq.ai">Contact Us</a>
+        </div>
+        <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
+            <a href="/subprocessors">Subprocessors</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 BQ AI. All rights reserved.</span>
+        <div class="social-icons">
+            <a href="#" aria-label="Twitter">🐦</a>
+            <a href="#" aria-label="Discord">💬</a>
+            <a href="#" aria-label="GitHub">🐙</a>
+        </div>
+    </div>
+</footer>
+
+<script src="/static/js/main.js"></script>
+<script src="/static/js/api.js"></script>
+</body>
+</html>

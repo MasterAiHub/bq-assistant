@@ -1,0 +1,14 @@
+{
+  "firewall_rules": [
+    {
+      "action": "allow",
+      "expression": "ip.src in {1.2.3.4}",
+      "description": "Allow office IP"
+    },
+    {
+      "action": "block",
+      "expression": "ip.geoip.country in {\"CN\", \"RU\"}",
+      "description": "Block high-risk countries"
+    }
+  ]
+}
