@@ -29,8 +29,8 @@ app = FastAPI(
 
 # Add security middlewares
 app.add_middleware(SecurityHeadersMiddleware)
-app.add_middleware(AuthMiddleware)
-app.add_middleware(CSRFMiddleware, secret_key=os.getenv("CSRF_SECRET_KEY"))
+# app.add_middleware(AuthMiddleware)
+# app.add_middleware(CSRFMiddleware, secret_key=os.getenv("CSRF_SECRET_KEY"))
 
 # Mount static files
 app.mount("/static", StaticFiles(directory="frontend/static"), name="static")

@@ -18,7 +18,7 @@ async def ai_assist(request: Request):
         question = data.get("question", "")
         context = data.get("context", "")
         
-        from services.ai_service import AIService
+        from backend.services.ai_service import AIService
         ai_service = AIService()
         answer = await ai_service.get_direct_answer(question, context)
         
@@ -40,7 +40,7 @@ async def transcribe_audio(request: Request):
         data = await request.json()
         audio_data = data.get("audio", "")
         
-        from services.transcription_service import TranscriptionService
+        from backend.services.transcription_service import TranscriptionService
         ts = TranscriptionService()
         transcript = await ts.transcribe(audio_data)
         
